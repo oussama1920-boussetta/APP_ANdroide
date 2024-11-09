@@ -1,0 +1,55 @@
+<!-- res/layout/activity_add_task.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la tâche" />
+
+    <EditText
+        android:id="@+id/taskUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Utilisateur responsable" />
+
+ <!--- <Spinner
+        android:id="@+id/taskStatusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/task_status_array" />-->
+    <RadioGroup
+        android:id="@+id/taskStatusRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="À faire" />
+
+        <RadioButton
+            android:id="@+id/radioDoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En cours" />
+
+        <RadioButton
+            android:id="@+id/radioDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminé" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter" />
+
+</LinearLayout>

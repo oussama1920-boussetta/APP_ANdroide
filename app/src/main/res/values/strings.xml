@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application Examen</string>
+    <string-array name="task_status_array">
+        <item>À faire</item>
+        <item>En cours</item>
+        <item>Terminé</item>
+    </string-array>
+</resources>
